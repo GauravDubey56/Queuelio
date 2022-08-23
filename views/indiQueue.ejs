@@ -9,6 +9,11 @@
 
         <div class="DetailsFAd">
           <div class="left">
+            <form class="form-inline">
+              <label class="sr-only" for="billAmount">Bill Amount</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="billAmount" placeholder="Enter bill amount">
+              <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            </form>
             <p>Next Turn: <span id="nexTurn"><%= nexTurn%></span></p>
             <p>People in the Queue:
               <ol id="personList">

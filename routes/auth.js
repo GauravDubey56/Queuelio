@@ -25,7 +25,7 @@ router.post("/", (req, res) => {
     username: req.body.username,
     password: req.body.password
   });
-
+  console.log(req.body);
   req.login(user, (err) => {
     if(err){
       console.log(err);

@@ -4,7 +4,8 @@
   "description": "An express application to create and manage virtual queues",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
+    "dev" : "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bhavya",
