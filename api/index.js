@@ -3,6 +3,8 @@ const app = express();
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 const router = require("./routes");
+const cors = require('cors');
+app.use(cors())
 dotenv.config({});
 const path = require("path");
 global.db = require("../db/index").getContext();
@@ -38,7 +40,7 @@ app.use(express.json());
 //     ResHelper.response(res, false, "Error Occured.", 500, "", "");
 //   }
 // });
-app.use("/", router);
+app.use("/api", router);
 app.listen(process.env.PORT || 3000, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
